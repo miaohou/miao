@@ -66,16 +66,14 @@ h1,h2{
 }
 
  /*MENU^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
- .indexmenu .miaologo{
- 	display: none;
- }
+
 
  .indexmenu{
-    position: fixed;
-    width: 100%;
-    z-index: 50;
-    transition: background ease-in-out .2s;
-    background: rgba(255,255,255,0);
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+  transition: background ease-in-out .2s;
+  background: rgba(0, 0, 0, 0.8);
  }
 
 
@@ -89,36 +87,50 @@ h1,h2{
 }
     
 
-.indexmenu ul li a{  
+.indexmenu li a{
  	text-decoration: none;
   font-weight: 900;
-    font-size: 16px;
-    color: #ffffff;
-  padding: 20px;
+  color: #aaa;
+  padding: 20px ;
   display: block;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
   letter-spacing: 0.7px;
+  transition: .5s all ease-out;
 }
 
+.indexmenu li a:hover{
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+}
 
+/* ^^^^^^^^^miaologo^^^^^^^^^^^^^^^^ */
+.miaologo{
+  margin-left: 50px;
+  margin-top: 12px;
+  float: left;
+ }
+.miaologo h2{
+  text-decoration: none;
+  padding-top: 7px;
+  padding-left: 8px;
+  color: #eee;
+  float: right;
+  font-size: 18px;
+ }
 
  /*landpage^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
-
 .parallax-window01 {
-    min-height: 800px;
-    background: transparent;
-      max-width: 100%;
-
+  min-height: 800px;
+  background: transparent;
+  max-width: 100%;
 }
+
 .parallax-window02 {
-
-    background: transparent;
-      max-width: 100%;
-
+  background: transparent;
+  max-width: 100%;
 } 
 
 .parallax-window03 {
-    min-height: 250px;  
+  min-height: 250px;  
 }   
 
 .maintitle{
@@ -126,17 +138,15 @@ h1,h2{
 }
 
 .maintitlecontent{
-
-    padding-top: 300px;
-    text-align: center;
- 
+  padding-top: 300px;
+  text-align: center; 
 }
 
 .maintitlecontent h1{
-    text-transform: uppercase;    
-    font-size: 80px;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
-   color: #fff; 
+  text-transform: uppercase;    
+  font-size: 80px;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+  color: #fff; 
 }
 
 
@@ -144,14 +154,14 @@ hr {
   border:0; 
   height:4px !important; 
 	background-color: #F05F40;
-    width: 50px;
-    margin: 30px auto;
+  width: 50px;
+  margin: 30px auto;
 }
    
 .maintitlecontent p{
-    letter-spacing: 0.5px;
-    color: rgba(255,255,255,0.8);
-    font-size: 25px;
+  letter-spacing: 0.5px;
+  color: rgba(255,255,255,0.8);
+  font-size: 25px;
 
 }
 
@@ -179,11 +189,11 @@ hr {
 }
 
 .aboutcontent p{
-    letter-spacing: 0.5px;
-    color: rgba(255,255,255,0.8);
-    font-size: 16px; 
-    line-height: 1.5em;
-    margin:0 40px; 
+  letter-spacing: 0.5px;
+  color: rgba(255,255,255,0.8);
+  font-size: 16px; 
+  line-height: 1.5em;
+  margin:0 40px; 
 }
 
 
@@ -257,9 +267,6 @@ overflow: hidden;
 
 }
 
-
-
-
 .title{
     background: rgba(255,255,255,.7);
     position: absolute;
@@ -304,9 +311,10 @@ overflow: hidden;
 
 
 .contactcontent {
-  width: 1000px;
-  margin: 0 auto 100px auto;
+  height: 650px;
+  margin: 0 auto;
   padding-top: 100px;
+  background-color: #fff;
 }
 .contactcontent h2{
    text-align: center;
@@ -373,7 +381,7 @@ i.mail{
   margin: 10px auto;
 }
 .contactleft ul{
-margin-left: 410px;
+margin-left: 600px;
 
 }
 
@@ -422,7 +430,7 @@ margin-left: 410px;
 /* -----------modal內容-------------- */
 
 .modal-content{
-    padding: 100px;
+  padding: 100px;
 }
 
 .modal-content h3{
@@ -431,32 +439,51 @@ margin-left: 410px;
   font-size: 22px;
 }
 
-.modal-content img{
-width: 900px;
-margin: 5px 0;
+
+.innerbox img{
+  margin: 5px 0;  
+}
+
+/* -----------modal UNT內容-------------- */
+.innerbox_unt img{
+  display: inline-block;
+  margin: 5px 5px 0 0;
 }
 
 
-/* @media (min-width: 1200px){
-.workscontent {
-    width: 1170px;
+
+/* -----------插圖頁check按鈕-------------- */
+.innerbox-cat p{
+  line-height: 40px; 
 }
+
+.innerbox-cat a {
+  text-decoration: none;
+  color: #fff;
 }
-@media (min-width: 992px){
-.workscontent {
-    width: 970px;
+
+.btn_check:hover{
+  background-color: #F05F40; 
 }
+
+.btn_check{
+  font-weight: 700;
+  transition: all .3s; 
+  padding: 8px 18px;
+  font-size: 15px;
+  background: #222;
+  color: #fff;
+  border-radius: 300px;
+  letter-spacing: 2px;
 }
-@media (min-width: 768px){
-.workscontent {
-    width: 750px;
+
+
+
+
+.innerbox_go{
+
 }
-} */
-
-
-
-
-
-
-
-
+.innerbox_go img{
+  margin: 5px 5px 0 0;
+vertical-align: top;
+}
