@@ -42,6 +42,12 @@ table {
 	border-spacing: 0;
 }
 
+img{
+  max-width:100%;
+height:auto;
+}
+
+
 /*reset^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
 
 .clearfix{
@@ -100,6 +106,16 @@ h1,h2{
 .indexmenu li a:hover{
   background-color: rgba(0, 0, 0, 0.9);
   color: #fff;
+}
+
+ @media (max-width: 569px) {
+.other_side{
+  display:none;
+}  
+.miaologo{
+   padding-top:5%; 
+    margin:5%;
+}
 }
 
 /* ^^^^^^^^^miaologo^^^^^^^^^^^^^^^^ */
@@ -169,11 +185,12 @@ hr {
 /* .......ABOUT ..........*/
 .about{
     background-color: #F05F40;
-    height: 400px;
+    min-height: 400px;
 }
 
 .aboutcontent, .workscontent{    
     padding-top: 100px;
+    padding-bottom: 100px;
     text-align: center;   
 }
 
@@ -200,27 +217,39 @@ hr {
 /* .......skills.....*/
 .works{
     background-color: #fff;
-    height: 600px;
+    min-height: 600px;
 
 }
 .workscontent {
-   width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 
 .workscontent ul li{
     float: left;
-    width: 330px;
+    width: 31.33333%;
     display: block;
+  margin-right: 1%;
+  margin-left: 1%;
+}
+
+
+@media (max-width:569px) {
+  .workscontent ul li {
+    width: 99%
+  }
+}
+@media (max-width:320px) {
+  .workscontent ul li {
+    width: 99%
+  }
 }
 
 /* 三個圓圈的字 */
 .workscontent .circle{
     color: #F05F40;
 }
-
-
 
 .workscontent h2, .portfoliocontent h2{ 
    font-size: 40px;
@@ -243,16 +272,29 @@ hr {
 /* -----作品----------- */
 
 .portfoliocontent{
-    padding-top: 100px;
-    padding-bottom: 150px;
-    text-align: center; 
-   width: 1000px;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  text-align: center; 
+  max-width: 1000px;
   margin: 0 auto;   
 }
 
+
+@media (max-width:768px) {
+  .allportfolio{
+    width: 100%;
+    margin:0 0 0 5%;
+  }
+}
+@media (max-width:569px) {
+  .allportfolio{
+    margin:0 0 0 20%;
+  }
+}
+
 .box{
-   width: 320px;
-   height: 200px;
+  width: 320px;
+  height: 200px;
    float: left;
    margin: 5px;
   position: relative;
@@ -261,7 +303,7 @@ overflow: hidden;
 }
 
 .box img{
-   height: 200px;
+  max-height: 200px;
 
 }
 
@@ -309,7 +351,7 @@ overflow: hidden;
 
 
 .contactcontent {
-  height: 650px;
+  min-height: 650px;
   margin: 0 auto;
   padding-top: 100px;
   background-color: #fff;
@@ -389,6 +431,7 @@ i.mail{
     padding-top: 100px;
     text-align: center;
     color: #fff;
+    letter-spacing: 0.5px;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
