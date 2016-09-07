@@ -314,12 +314,6 @@ hr {
 }
 
 
-@media (max-width:375px) {
-  .allportfolio{
-     width: 80%;
-    margin:0   15% 0 5%;
-  }
-}
 @media (max-width:768px) {
   .allportfolio{
      width: 90%;   
@@ -327,11 +321,23 @@ hr {
   }
 }
 
-
 @media (max-width:568px) {
   .allportfolio{
      width: 80%;
     margin:0 0 0 20%;
+  }
+}
+
+@media (max-width:414px) {
+  .allportfolio{
+    margin:0 5% 0 10% ;
+
+  }
+}
+@media (max-width:375px) {
+  .allportfolio{
+     width: 80%;
+    margin:0   15% 0 5%;
   }
 }
 
