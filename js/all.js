@@ -5,17 +5,9 @@ $(document).ready(function() {
   $('.parallax-window02').parallax({imageSrc:'images/bg02.jpg'});
   $('.parallax-window03').parallax({imageSrc:'images/bg.jpg'});
 
-/*滑動到下個區塊*/
-/*  $('.indexmenu').on('click', 'a', function(event){
-    event.preventDefault();
-  var _href = $(this).attr('href');
-  console.log(this);
-    $('html, body').animate({
-        scrollTop: $( _href ).offset().top
-    }, 800);
-  });*/
 
-/*modal*/
+
+/*modal點了彈出視窗*/
   $("#demo01").animatedModal();
   $("#demo02").animatedModal({modalTarget:'modal-02'});
   $("#demo03").animatedModal({modalTarget:'modal-03'});
@@ -26,7 +18,7 @@ $(document).ready(function() {
   $("#demo08").animatedModal({modalTarget:'modal-08'});
   $("#demo09").animatedModal({modalTarget:'modal-09'});
 
-// Cache selectors
+// 點了移到業面範圍Cache selectors
 var lastId,
     topMenu = $(".indexmenu"),
     topMenuHeight = topMenu.outerHeight(),
@@ -71,5 +63,11 @@ $(window).scroll(function(){
          .end().filter("[href='#"+id+"']").parent().addClass("active");
    }                   
 });
+
+// scroll時的smoove動畫
+
+$('.aboutcontent').smoove({moveY:'60%'});
+$('.workscontent').smoove({moveY:'70%'});
+$('.contactleft').smoove({moveY:'50%'});
 
 });
