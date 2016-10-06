@@ -73,7 +73,6 @@ h1,h2{
 
  /*MENU^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
 
-
 .indexmenu{
   position: fixed;
   width: 100%;
@@ -150,7 +149,7 @@ h1,h2{
 }
 
 .parallax-window02 {
-
+ background-size: cover;
 } 
 
 .parallax-window03 {
@@ -399,16 +398,17 @@ overflow: hidden;
 
 /* -----------contact頁面-------------- */
 
-
+.contact{
+   text-align: center;
+}
 .contactcontent {
   min-height: 650px;
   margin: 0 auto;
   padding-top: 100px;
   background-color: #fff;
 }
-.contactcontent h2{
-   text-align: center;
-}
+
+
 
 .contactcontent h2{ 
     font-size: 40px;
@@ -586,3 +586,5 @@ i.mail{
   margin: 5px 5px 0 0;
 vertical-align: top;
 }
+
+
