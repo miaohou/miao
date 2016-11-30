@@ -5,7 +5,11 @@ $(document).ready(function() {
   $('.parallax-window02').parallax({imageSrc:'images/bg02.jpg'});
   $('.parallax-window03').parallax({imageSrc:'images/bg.jpg'});
 
-
+/*漢堡選單*/
+ $('.showmenu').on('click',  function(e){
+      e.preventDefault();
+      $('.indexmenu').toggleClass('menu-show');
+  });
 
 /*modal點了彈出視窗*/
   $("#demo01").animatedModal();

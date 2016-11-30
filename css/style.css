@@ -75,23 +75,24 @@ h1,h2{
 
 .indexmenu{
   position: fixed;
+  -webkit-transform: translateZ(0);
   width: 100%;
   z-index: 50;
   transition: background ease-in-out .2s;
   background: rgba(0, 0, 0, 0.8);
  }
 
-.indexmenu ul li{
+.menu li{
  	float: right;
 }
 
 
-.indexmenu ul{
+.menu{
 	 margin-right: 40px;
 }
     
 
-.indexmenu li a{
+.menu li a{
  	text-decoration: none;
   font-weight: 900;
   color: #aaa;
@@ -101,34 +102,65 @@ h1,h2{
   transition: .5s all ease-out;
 }
 
-.indexmenu li a:hover{
+.menu li a:hover{
   background-color: rgba(0, 0, 0, 0.9);
   color: #fff;
 }
 
- @media (max-width: 568px) {
-.other_side{
-  display:none;
-}  
-.miaologo{
- padding-left: 150px;
- padding-bottom: 10px;
-}
+.showmenu{
+  display: none;
 }
 
- @media (max-width: 375px) {
-.other_side{
-  display:none;
-}  
-.miaologo{
- padding-left: 50px;
- 
+ @media (max-width: 767px) {
+  .menu {
+    /*隱藏選單開始*/
+    max-height: 0px;
+    overflow: hidden;
+    /*隱藏選單結束*/
+    transition: max-height 1s;
+    margin-top: 1px;
+    /*絕對定位疊在網頁上*/
+    position: absolute;
+    z-index: 100;
+    /*header boder 線條*/
+    top: 58px;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    margin-right:0;
+  } 
+  .menu li{
+      display: block;
+    float: none;
+    border-top: 1px solid #444;
+  }
+  .menu li a{
+      display: block;
+    transition: all 0.3s;
+  }
+  .menu li a:hover{
+  background: rgba(0, 0, 0, 1);
+    color: #fff;
+  }
+  .showmenu{
+    font-size: 24px;
+    display: block;
+    float: right;
+    margin: 15px 30px 10px 0;
+    text-decoration: none;
+    color: #fff;
+  }
+  /*jQ點擊後動態在 body 加上 class */
+  .menu-show .menu{
+    max-height: 500px;
+  }
 }
-}
+
+
 /* ^^^^^^^^^miaologo^^^^^^^^^^^^^^^^ */
 .miaologo{
-  margin-left: 50px;
-  margin-top: 12px;
+
+  padding: 12px 0 15px 30px ;
   float: left;
  }
 .miaologo h2{
@@ -167,37 +199,25 @@ background-attachment: scroll;
   }
 }
 .maintitle{
-	margin: 0 auto;	
+
 }
 
 .maintitlecontent{
   padding-top: 300px;
-  text-align: center; 
+  text-align: center;
+  max-width:1000px;
+    margin: 0 auto;  
 }
 
 
 .maintitlecontent h1{
   text-transform: uppercase;    
-  font-size: 80px;
+  font-size: 90px;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
   color: #fff; 
 }
 
-@media (max-width:375px) {
-  .maintitlecontent h1 {
-  font-size: 55px;
-  margin: 10px;
-  }
-}
 
-@media (max-width:568px) {
-  .maintitlecontent {
-  padding-top: 70px;
-  }
-   .maintitlecontent h1 {
-  font-size: 55px;
-  } 
-}
 hr {
   border:0; 
   height:4px !important; 
@@ -212,7 +232,23 @@ hr {
   font-size: 25px;
 
 }
+@media (max-width:569px){
+ .maintitlecontent{
+  padding-top: 180px;
+ }
+  .maintitlecontent h1{
+   font-size: 60px;  
+ } 
 
+}
+@media (max-width:320px){
+ .maintitlecontent h1{
+   font-size: 50px;  
+ } 
+  .maintitlecontent p{
+   font-size: 20px; 
+ }
+}
 
 /* .......ABOUT ..........*/
 .about{
@@ -316,33 +352,16 @@ hr {
 @media (max-width:768px) {
   .allportfolio{
      width: 90%;   
-    margin:0 3% 0 7%;
+    margin:0 5% 0 5%;
   }
 }
 
-@media (max-width:568px) {
-  .allportfolio{
-     width: 80%;
-    margin:0 0 0 20%;
-  }
-}
 
-@media (max-width:414px) {
-  .allportfolio{
-    margin:0 5% 0 10% ;
 
-  }
-}
-@media (max-width:375px) {
-  .allportfolio{
-     width: 80%;
-    margin:0   15% 0 5%;
-  }
-}
 
 .box{
-  width: 320px;
-  height: 200px;
+  max-width: 320px;
+    max-height: 200px;
    float: left;
    margin: 5px;
   position: relative;
