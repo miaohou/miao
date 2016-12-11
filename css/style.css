@@ -107,53 +107,12 @@ h1,h2{
   color: #fff;
 }
 
-.showmenu{
-  display: none;
-}
-
- @media (max-width: 767px) {
+ @media (max-width: 569px) {
   .menu {
-    /*隱藏選單開始*/
-    max-height: 0px;
-    overflow: hidden;
-    /*隱藏選單結束*/
-    transition: max-height 1s;
-    margin-top: 1px;
-    /*絕對定位疊在網頁上*/
-    position: absolute;
-    z-index: 100;
-    /*header boder 線條*/
-    top: 58px;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.8);
-    margin-right:0;
+
+  display: none;
   } 
-  .menu li{
-      display: block;
-    float: none;
-    border-top: 1px solid #444;
-  }
-  .menu li a{
-      display: block;
-    transition: all 0.3s;
-  }
-  .menu li a:hover{
-  background: rgba(0, 0, 0, 1);
-    color: #fff;
-  }
-  .showmenu{
-    font-size: 24px;
-    display: block;
-    float: right;
-    margin: 15px 30px 10px 0;
-    text-decoration: none;
-    color: #fff;
-  }
-  /*jQ點擊後動態在 body 加上 class */
-  .menu-show .menu{
-    max-height: 500px;
-  }
+
 }
 
 
