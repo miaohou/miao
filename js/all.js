@@ -1,9 +1,9 @@
 $(document).ready(function() {
 
 /*0000視差滾動0000000*/
-  $('.parallax-window01').parallax({imageSrc:'images/bg.jpg'});
+  $('.parallax-window01').parallax({imageSrc:'images/bg-1.jpg'});
   $('.parallax-window02').parallax({imageSrc:'images/bg02.jpg'});
-  $('.parallax-window03').parallax({imageSrc:'images/bg.jpg'});
+  $('.parallax-window03').parallax({imageSrc:'images/bg-1.jpg'});
 
 /*漢堡選單*/
  $('.showmenu').on('click',  function(e){
@@ -11,6 +11,7 @@ $(document).ready(function() {
       $('.indexmenu').toggleClass('menu-show');
   });
 
+ 
 /*modal點了彈出視窗*/
   $("#demo01").animatedModal();
   $("#demo02").animatedModal({modalTarget:'modal-02'});
