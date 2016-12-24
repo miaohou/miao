@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 /*0000延遲載入圖片0000000*/
-        $("img").lazyload();
+        $("img").lazyload({ threshold : 200 });
 
 /*0000視差滾動0000000*/
   $('.parallax-window01').parallax({imageSrc:'images/bg-1.jpg'});
