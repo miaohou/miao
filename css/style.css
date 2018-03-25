@@ -613,11 +613,17 @@ text-align: center;
 
 
 .innerbox img{
-  margin: 5px 0;  
+  margin: 5px 0;
+  vertical-align: top;  
 }
 
 .innerbox_line div{
  font-size:0px;
+}
+/* -----------modal luna-------------- */
+.innerbox_set img{
+  margin: 0;
+  vertical-align: top;  
 }
 
 /* -----------modal UNT內容-------------- */
@@ -625,6 +631,8 @@ text-align: center;
   display: inline-block;
   margin: 5px 5px 0 0;
 }
+
+
 
 
 
