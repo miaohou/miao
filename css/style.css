@@ -335,16 +335,40 @@ hr {
   margin-left: 1%;
 }
 
+.btn_resume:hover{
+  background-color: #222; 
+}
+
+.btn_resume{
+  text-decoration: none;
+  font-weight: 700;
+  -webkit-transition: all .3s;
+  transition: all .3s; 
+  padding: 8px 18px;
+  font-size: 15px;
+  background: #FFF;
+  color: #F05F40;
+  border-radius: 300px;
+  letter-spacing: 2px;
+}
+
+.resume{
+  padding-top: 2%;
+}
 
 @media (max-width:569px) {
   .workscontent ul li {
     width: 99%
   }
+    .resume{
+  padding-top: 7%;
+}
 }
 @media (max-width:320px) {
   .workscontent ul li {
     width: 99%
   }
+
 }
 
 
@@ -661,8 +685,6 @@ text-align: center;
   border-radius: 300px;
   letter-spacing: 2px;
 }
-
-
 
 
 
