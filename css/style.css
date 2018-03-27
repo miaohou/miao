@@ -100,6 +100,7 @@ h1,h2{
   display: block;
   letter-spacing: 0.7px;
   transition: .5s all ease-out;
+  font-size: 14px;
 }
 
 .menu li a:hover{
@@ -128,7 +129,7 @@ h1,h2{
   padding-left: 8px;
   color: #eee;
   float: right;
-  font-size: 18px;
+  font-size: 16px;
  }
 
  /*landpage^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
