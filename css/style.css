@@ -663,7 +663,7 @@ text-align: center;
 
 
 /* -----------插圖頁check按鈕-------------- */
-.innerbox-cat p{
+.innerbox-cat p, .innerbox_go p{
   line-height: 40px; 
 }
 
@@ -686,6 +686,7 @@ text-align: center;
   color: #fff;
   border-radius: 300px;
   letter-spacing: 2px;
+  text-decoration: none;
 }
 
 
