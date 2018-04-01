@@ -12,13 +12,7 @@ $(document).ready(function() {
   });
 
 
-/*lazyload*/
 
-     $("img.lazy").lazyload({
-      
-      effect : "fadeIn"
-     });
- 
 
  
 /*modal點了彈出視窗*/
