@@ -11,6 +11,15 @@ $(document).ready(function() {
       $('.indexmenu').toggleClass('menu-show');
   });
 
+
+/*lazyload*/
+
+     $("img.lazy").lazyload({
+      
+      effect : "fadeIn"
+     });
+ 
+
  
 /*modal點了彈出視窗*/
   $("#demo01").animatedModal();
