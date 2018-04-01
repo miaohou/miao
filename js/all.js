@@ -22,6 +22,9 @@ $(document).ready(function() {
   $("#demo07").animatedModal({modalTarget:'modal-07'});
   $("#demo08").animatedModal({modalTarget:'modal-08'});
   $("#demo09").animatedModal({modalTarget:'modal-09'});
+  $("#demo10").animatedModal({modalTarget:'modal-10'});
+  $("#demo11").animatedModal({modalTarget:'modal-11'});
+  $("#demo12").animatedModal({modalTarget:'modal-12'});
 
 // 點了移到業面範圍Cache selectors
 var lastId,

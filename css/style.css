@@ -663,8 +663,8 @@ text-align: center;
 
 
 /* -----------插圖頁check按鈕-------------- */
-.innerbox-cat p, .innerbox_go p{
-  line-height: 40px; 
+.innerbox-cat p, .innerbox_go p, .innerbox p{
+  margin: 40px 0;
 }
 
 .innerbox-cat a {
