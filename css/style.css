@@ -430,8 +430,10 @@ hr {
 
 @media (max-width:768px) {
   .allportfolio{
-     width: 90%;   
-    margin:0 5% 0 5%;
+display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
   }
 }
 
